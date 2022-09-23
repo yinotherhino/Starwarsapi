@@ -2,8 +2,6 @@
 
 A SPA (single page application) application developed with HTML, CSS and JavaScript. It shows all characters from a star wars API (https://swapi.dev/api/people).
 
-### Process ?
-
 1. Display an image for each of the characters. Preferrably a unique image for each but you could also choose to use a dummy image for all of them.
 
 2. An HTTP request was made to the star wars API and the result from the request was used to populate your frontend application
