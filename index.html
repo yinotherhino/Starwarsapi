@@ -6,44 +6,104 @@
     <title>Star Wars</title>
     <script src="https://kit.fontawesome.com/2ed1e52188.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/index.css" >
+    <link rel="icon" type="image/x-icon" href="./img/starwarsicon.png">
   </head>
   <body>
     <!-- Write your implementation here -->
+
+    <div class="modal">
+      <div class="alert-content">
+        <i class="fa-solid fa-xmark" id="hide-modal" style="float: right; font-size: 35px;"></i>
+       <p>Hello There!</p> 
+      </div>
+    </div>
     <header>
     <nav>
         <img src="./img/starwarsbg.png" class="nav-logo">
 
-        <i class="fa-solid fa-bars icon" id="effects"></i>
+        <i class="fa-solid fa-bars icon" id="show-menu"></i>
+
         <div class="in-effect" id="show-effect">
             <div class="effect" >
-                <i class="fa-solid fa-user" style="margin: 30px; font-size: 30px;"></i>
-                <i class="fa-solid fa-xmark" style="float: right; margin: 30px; font-size: 30px;"></i>
+              <i class="fa-solid fa-user" style="margin: 30px; font-size: 30px;"></i>
+              <i class="fa-solid fa-xmark" id="hide-menu" style="float: right; margin: 30px; font-size: 35px;"></i>
             </div>
             
             <div style="margin:30px;">
-                <i class="fa-solid fa-share-from-square logo"></i> Log in
+              <i class="fa-solid fa-share-from-square logo"></i> Log in
             </div>
             
 
             <div class="logos-div">
-                <i class="fa-brands fa-twitter logo"></i>
-                <i class="fa-brands fa-linkedin logo"></i>
-                <i class="fa-brands fa-facebook logo"></i>
-                <i class="fa-solid fa-envelope logo"></i>
+              <i class="fa-brands fa-twitter logo"></i>
+              <i class="fa-brands fa-linkedin logo"></i>
+              <i class="fa-brands fa-facebook logo"></i>
+              <i class="fa-solid fa-envelope logo"></i>
             </div>
         </div>
 
         </div>
     </nav>
     </header>
-
+    
     <main>
+      
     <div class="head"><h1 class="heading"> Starwars Characters you would love!</h1></div>
 
     <div class="grid-container">
+      <div>
         <img src="./img/starwarsbg.png" class="profile-pic">
+        <p>Yino The Rhino</p>
+        <button id="yinohero">About Superhero</button>
+      </div>
+      <div>
+        <img src="./img/starwarsbg.png" class="profile-pic">
+      </div>
+      <div>
+        <img src="./img/starwarsbg.png" class="profile-pic">
+      </div>
+      <div>
+        <img src="./img/starwarsbg.png" class="profile-pic">
+      </div>
+
+      <div>
+        <img src="./img/starwarsbg.png" class="profile-pic">
+      </div>
+      <div>
+        <img src="./img/starwarsbg.png" class="profile-pic">
+      </div>
+      <div>
+        <img src="./img/starwarsbg.png" class="profile-pic">
+      </div>
+      <div>
+        <img src="./img/starwarsbg.png" class="profile-pic">
+      </div>
+   
+      <div>
+        <img src="./img/starwarsbg.png" class="profile-pic">
+      </div>
+      <div>
+        <img src="./img/starwarsbg.png" class="profile-pic">
+      </div>
+     
+      </div>
+ 
+    
     </div>
     </main> 
+
+
+    <footer>
+
+      <div class="logos-div">
+        <i class="fa-brands fa-twitter logo-bottom"></i>
+        <i class="fa-brands fa-linkedin logo-bottom"></i>
+        <i class="fa-brands fa-facebook logo-bottom"></i>
+        <i class="fa-solid fa-envelope logo-bottom"></i>
+      </div>
+
+
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script/index.js"></script>
   </body>
