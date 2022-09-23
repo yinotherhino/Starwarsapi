@@ -15,7 +15,7 @@ A SPA (single page application) application developed with HTML, CSS and JavaScr
 
 4. The SPA was made responsive using CSS grid.
 
-5. The application is hosted on heroku (submit link should be added to your turned in field on Teams)
+5. The application is hosted on heroku (https://starwarscharsapi.herokuapp.com/)
 
 
 
