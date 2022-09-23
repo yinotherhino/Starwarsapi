@@ -20,12 +20,6 @@ A SPA (single page application) application developed with HTML, CSS and JavaScr
 
 
 
-# week-one-sq012
-
-## Problem Description:
-
-You are to create a SPA (single page application) application using HTML, CSS and JavaScript. It shows all characters from a star wars API (https://swapi.dev/api/people). Read the documentation and implement as follows.
-
 ### Process ?
 
 1. Display an image for each of the characters. Preferrably a unique image for each but you could also choose to use a dummy image for all of them.
