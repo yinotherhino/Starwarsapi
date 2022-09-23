@@ -1,7 +1,73 @@
+/* TAG SELECTORS */
 *,
 body,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
+body{
+  background-color: #FFE6F7;
+  /* background-image: url('../img/starwarsbg.png'); */
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 200PX;
+}
+nav{
+  height: 100px;
+  background-color: #937DC2;
+}
+
+/* CLASS SELECTORS */
+.nav-logo{
+  height: 100px;
+
+}
+.icon{
+  margin: 30px;
+  color: black;
+  font-size: 30px;
+  float: right;
+}
+.in-effect{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #C689C6;
+}
+.logos-div{
+  letter-spacing: 10px;
+  margin: 30px;
+}
+.logo{
+  font-size: 30px;
+}
+.head{
+  text-align: center;
+}
+.heading{
+  display: inline-block;
+}
+
+.profile-pic{
+  width: 300px;
+  height: 300px;
+}
+
+.grid-container{
+  display: grid;
+  grid-row: 20% 20% 20% 20%;
+  gap: 10px;
+}
+
+/* ID SELECTORS */
+
+/* #937DC2
+#C689C6
+#FFABE1
+#FFE6F7*/
