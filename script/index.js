@@ -1,51 +1,58 @@
-function main() {
+const main= () =>{
     let result;
     const images= ['lukesky.jpeg', 'c3po.jpeg', 'r2d2.webp', 'darth.jpeg', 'leia.jpeg', 'lars.png',
                 'beru.webp', 'r5.jpeg', 'biggs.jpeg', 'obi.jpeg'];
-    const resultingVar= results=>{
+    const resolveAPI= results=>{
         if (results){
         const contentLength= results.length;
-        for(let i=0; i<contentLength; i++){
-        result= {name:results[i]['name'], gender:results[i]['gender'], height:results[i]['height']};
-        document.getElementById("result-container").innerHTML+= '<div><img src="./img/'+images[i]+'" class="profile-pic"><p class="personname">'+ result.name +'</p><button id="yinohero">About Superhero</button></div>';  
-        }
+        results.forEach( (x,i) =>{
+        result= {name:x['name'], gender:x['gender'], height:x['height']};
+        document.getElementById("result-container").innerHTML+= '<div><img src="./img/'+images[i]+'" class="profile-pic"><p class="personname" data-name="'+ result.name+'" data-gender="'+result.gender+' " data-height="'+result.height+'">'+ result.name +'</p></div>';
+         });
+        modalClick(results);
     }
-
     }
     fetch('https://swapi.dev/api/people/')
     .then((response) => response.json())
     .then((data => {
-        //send the results (array of individual characters) fetched from the API to the function
-        resultingVar(data['results']);
+        //send the results (array of individual characters) fetched from the API to the resolveAPI
+        resolveAPI(data['results']);
     }));
 
-//TO DO
-// add images dynamically
-// 
+    
+    //show the menu
+    $('#show-menu').click(function(){
+        $('#show-effect').show(200);
+    })
 
+    //top menu hide effect
+    $('#hide-menu').click(function(){
+        $('#show-effect').hide(100);
+    });
 
-$('#show-menu').click(function(){
-    $('#show-effect').show(500);
-})
+    const modalClick= (results)=>{
+    $('.personname').click(function(evt){
+        $('.modal-name').text(evt.target.dataset.name);
+        $('.modal-gender').text(evt.target.dataset.gender);
+        $('.modal-height').text(evt.target.dataset.height);
+        $('.modal').show(100);
 
-//top menu hide effect
-$('#hide-menu').click(function(){
-    $('#show-effect').hide(500);
-});
+    });
+    // $('.personname').click(function(evt){
+    //     // console.log(results)
+    //     console.log(evt.target.dataset)
+    // });
 
-$('.yinohero').click(function(){
-    $('.modal').show();
-});
+    $('#hide-modal').click(function(){
+        $('.modal').hide(100);
+    })
 
-$('#hide-modal').click(function(){
-    $('.modal').hide();
-})
-
-$('body').click(function(evt) {
+    $('body').click(function(evt) {
     if (evt.target.className == 'modal') {
-      $('.modal').hide();
+      $('.modal').hide(100);
     }
-  });
+    });
+}
 
 }
 
@@ -55,4 +62,4 @@ main();
 
 
 
-// module.exports = { main }
+module.exports = { main }
