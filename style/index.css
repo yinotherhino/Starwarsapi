@@ -91,6 +91,7 @@ footer{
   text-align: center;
 }
 
+
 .alert-content{
   background-color: #C689C6;
   color: white;
@@ -111,7 +112,7 @@ footer{
   color: #56369b;
 
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   row-gap: 20px;
   gap: 10px;
 }
@@ -138,14 +139,27 @@ footer{
 
 @media only screen and (max-width: 900px) {
   .grid-container{
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
   }
   .grid-container > div{
     margin-bottom: 30px;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
+  .in-effect{
+
+    width: 50%;
+  }
+  .grid-container{
+    grid-template-columns: auto auto;
+  }
+  .grid-container > div{
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .in-effect{
 
     width: 50%;
