@@ -9,8 +9,8 @@ html {
 }
 body{
   background-color: #FFE6F7;
-  /* background-image: url('../img/starwarsbg.png'); */
-  font-family: Tahoma, Verdana, 'Segoe UI', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   background-repeat: repeat-x;
   background-attachment: fixed;
   background-position: center;
@@ -95,7 +95,7 @@ footer{
 .alert-content{
   background-color: #C689C6;
   color: white;
-  width: 30%;
+  width: 40%;
   height: 30%;
   padding: 20px;
   position: relative;
@@ -121,6 +121,10 @@ footer{
   text-align: center;
   margin-bottom: 50px;
   color: #56369b;
+  
+}
+.grid-container > div >img{
+  box-shadow: 2px 4px 4px 0 #56369b;
 }
 
 .logo-bottom{
@@ -164,6 +168,10 @@ footer{
     margin-right: 20px;
     margin: 20px;
   }
+  .alert-content{
+    width: 60%;
+    left: 20%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -182,4 +190,5 @@ footer{
   .icon{
     font-size: 20px;
   }
+  
 }

@@ -18,7 +18,7 @@ const main= (() =>{
         document.getElementById("result-container").innerHTML+= 
         `<div><img src="./img/${images[i]}" class="profile-pic">
         <p class="personname" 
-            data-name="'${APIresult.name}'" 
+            data-name="${APIresult.name}" 
             data-gender="${APIresult.gender} " 
             data-height="${APIresult.height}">
         ${APIresult.name}
