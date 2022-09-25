@@ -157,17 +157,29 @@ footer{
   .grid-container > div{
     margin-bottom: 20px;
   }
+  .nav-logo{
+    margin-left: 20px;
+  }
+  .icon{
+    margin-right: 20px;
+    margin: 20px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-  .in-effect{
 
-    width: 50%;
-  }
   .grid-container{
     grid-template-columns: auto;
   }
-  .grid-container > div{
-    margin-bottom: 20px;
+  nav{
+    height: 50px;
+  }
+  .nav-logo{
+    margin-left: 20px;
+    height: 40px;
+    margin-top: 5px;
+  }
+  .icon{
+    font-size: 20px;
   }
 }
