@@ -112,7 +112,7 @@ footer{
   color: #56369b;
 
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
   row-gap: 20px;
   gap: 10px;
 }
@@ -132,9 +132,13 @@ footer{
 }
 
 
+
 /* ID SELECTORS */
 #hide-modal:hover{
   color: black;
+}
+.hidden, #result-container2, #result-container3, #result-container4{
+  display: none;
 }
 /* #937DC2
 #C689C6
@@ -143,7 +147,7 @@ footer{
 
 @media only screen and (max-width: 900px) {
   .grid-container{
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
   }
   .grid-container > div{
     margin-bottom: 30px;
@@ -156,7 +160,7 @@ footer{
     width: 50%;
   }
   .grid-container{
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
   }
   .grid-container > div{
     margin-bottom: 20px;
@@ -177,7 +181,7 @@ footer{
 @media only screen and (max-width: 400px) {
 
   .grid-container{
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
   }
   nav{
     height: 50px;
