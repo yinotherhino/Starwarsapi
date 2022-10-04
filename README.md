@@ -1,4 +1,4 @@
-## Problem Description:
+## Project Description:
 
 A SPA (single page application) application developed with HTML, CSS and JavaScript. It shows all characters from a star wars API (https://swapi.dev/api/people).
 
